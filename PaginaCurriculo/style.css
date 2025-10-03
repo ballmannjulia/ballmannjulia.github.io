@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #CAD2C5;
+    color: #52796F;
+    padding: 20px;
+}
+
+.curriculo {
+    margin: 3% auto;
+    max-width: 1200px;
+}
+
+.curriculo__header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 3px solid #2F3E46;
+    margin-bottom: 40px;
+}
+
+.curriculo__titulo {
+    font-size: 2.5rem;
+    font-family: 'Krona One', sans-serif;
+    color: #2F3E46;
+    margin-bottom: 10px;
+}
+
+.curriculo__subtitulo {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #52796F;
+    margin-bottom: 20px;
+}
+
+.curriculo__contato {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 20px 0;
+}
+
+.curriculo__linkedin {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2F3E46;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: 2px solid #2F3E46;
+    padding: 10px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.curriculo__linkedin:hover {
+    background-color: #2F3E46;
+    color: #CAD2C5;
+}
+
+.curriculo__voltar {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 20px;
+    color: #52796F;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border: 2px solid #52796F;
+    padding: 10px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.curriculo__voltar:hover {
+    background-color: #52796F;
+    color: #CAD2C5;
+}
+
+.curriculo__secao {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.curriculo__secao__titulo {
+    font-size: 2rem;
+    font-family: 'Krona One', sans-serif;
+    color: #2F3E46;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #52796F;
+}
+
+.curriculo__secao__texto {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: #52796F;
+}
+
+.curriculo__item {
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 3px solid #2F3E46;
+}
+
+.curriculo__item__titulo {
+    font-size: 1rem;
+    font-family: 'Krona One', sans-serif;
+    color: #2F3E46;
+    margin-bottom: 8px;
+}
+
+.curriculo__item__periodo {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: #52796F;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.curriculo__item__lista {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.curriculo__item__lista li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #52796F;
+    margin-bottom: 8px;
+}
+
+.curriculo__destaque {
+    background-color: #84A98C;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 5px solid #2F3E46;
+}
+
+.curriculo__destaque .curriculo__item__titulo {
+    color: #2F3E46;
+}
+
+.curriculo__destaque .curriculo__secao__texto {
+    color: #2F3E46;
+    margin-bottom: 5px;
+}
+
+.curriculo__habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.curriculo__habilidade__grupo {
+    background-color: #CAD2C5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.curriculo__habilidade__categoria {
+    font-family: 'Krona One', sans-serif;
+    color: #2F3E46;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.curriculo__habilidade__grupo .curriculo__secao__texto {
+    font-size: 1rem;
+    color: #2F3E46;
+}
+
+.curriculo__competencias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.curriculo__competencia__tag {
+    background-color: #2F3E46;
+    color: #CAD2C5;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.curriculo__link__externo {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2F3E46;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.curriculo__link__externo:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+    .curriculo {
+        margin: 5%;
+    }
+
+    .curriculo__titulo {
+        font-size: 2rem;
+    }
+
+    .curriculo__contato {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .curriculo__secao__titulo {
+        font-size: 1.6rem;
+    }
+
+    .curriculo__habilidades {
+        grid-template-columns: 1fr;
+    }
+}
+
+.botao__voltar {
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 4px;
+    text-decoration: none;
+    color: #52796F;
+    margin-top: 20px;
+    font-weight: 600;
+    border: 2px solid #52796F;
+
+}
+
+.botao__linkedin {
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 4px;
+    text-decoration: none;
+    color: #52796F;
+    margin-top: 60px;
+    font-weight: 600;
+    border: 2px solid #52796F;
+    margin-right: 20px;
+}
